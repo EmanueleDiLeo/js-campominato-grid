@@ -13,7 +13,10 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 
 ### Procedimento
 
-1. creiamo un header e un main in html
+1. creo un header e un main in html
 1. nell'header ci sarà la scelta della difficoltà e il bottone per iniziare il gioco
 1. nel main il contenitore che conterrà inizialmente un h2 e dopo all'avvio del del gioco una matrice
-1. creiamo varie classi nel css per ordinare i quadrati della matrice
+1. creo varie classi nel css per ordinare i quadrati della matrice
+1. prendo il bottose su js e resetto in contenitore al click con una funzione
+1. creo una funzione che in base alla difficoltà mi dice quante righe/collone occorrono
+1. creo 2 for il primo mi scorre le righe il secondo le colonne
