@@ -4,8 +4,6 @@ const container = document.querySelector(".container");
 btn.addEventListener("click", function(){
   reset();
   const difficulty = (document.querySelector("#difficulty").value).toLowerCase();
-  const rowCol = rowColBox(difficulty);
-  console.log(rowCol);
   startBox(difficulty);
   
   
@@ -35,33 +33,30 @@ function rowColBox(value){
 }
 
 function startBox(difficulty){
-  let counter = 1;
+  let counter = 0;
   const nRowCol = rowColBox(difficulty);
   const widthBox = 100 / nRowCol;
 
   for(let i = 1; i <= nRowCol; i++){
     for(let i = 1; i <= nRowCol; i++){
-      const box = createBox(widthBox);
-      
-      // box.addEventListener("click",function(){
-      //   this.classList.toggle("click")
-      //   console.log(this.innerText);
-      // });
-      container.append(box);
       counter++;
+      const box = createBox(widthBox,counter);
+      
+      box.addEventListener("click",function(){
+        this.classList.toggle("click")
+        console.log(this._boxID);
+      });
+
+      container.append(box);
     }
   }
-
-  // const boxs = document.getElementsByClassName("square");
-
-
-
 }
 
-function createBox(widthBox){
+function createBox(widthBox,nBox){
   const newBox = document.createElement('div');
   newBox.className = "square";
   newBox.style.width = widthBox + "%";
+  newBox._boxID = nBox;
   return newBox;
   
 }

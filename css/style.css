@@ -29,18 +29,17 @@ h2{
   justify-content: center;
   height: 600px;
   width: 600px;
-  background-color: aqua;
 }
 
 .square{
   border: 2px solid white;
   aspect-ratio: 1 / 1;
   cursor: pointer;
-
+  background-color: chartreuse;
 }
 
 .square.click{
-  background-color: chartreuse;
+  background-color: aqua;
 }
 
 .btn{

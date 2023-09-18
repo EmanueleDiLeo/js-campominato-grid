@@ -19,4 +19,6 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 1. creo varie classi nel css per ordinare i quadrati della matrice
 1. prendo il bottose su js e resetto in contenitore al click con una funzione
 1. creo una funzione che in base alla difficoltà mi dice quante righe/collone occorrono
-1. creo 2 for il primo mi scorre le righe il secondo le colonne
+1. creo 2 for il primo mi scorre le righe il secondo le colonne in base alla difficolta selezionata
+1. creo la funzione per crearmi un box dove gli passo la larghezza che devono avere i box e il numero del box che sta creando
+1. creo un evento chick al box dove si colora di azzurro e stampa in console il numero del box
